@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>leetcode Tracker</title>
+  <link href="output.css" rel="stylesheet">
+  <style>
+    .bg-conic-gradient {
+      background: conic-gradient(#299f5d var(--progress-degree, 0%), #283a2e 0%);
+    }
+  </style>
+</head>
+
+<body class="bg-slate-800 flex h-screen justify-center items-center ">
+
+  <div class="  w-2/3 bg-slate-900 shadow-2xl p-10 rounded-xl text-white">
+    <div>
+      <div class="mb-5 text-2xl font-medium">
+        <h1>Leetcode Profile Tracker</h1>
+      </div>
+      <div>
+        <p class="mb-3">Enter Your LeetCode Username Below To Check Your statistics (ex: tojuna) :</p>
+        <input class=" md:w-lg w-5xs p-2 bg-amber-50 rounded-lg  mr-3 text-black" type="text"
+          placeholder="Enter Your Username " id="user-input">
+        <button class="bg-amber-500 md:w-30 w-20 p-2 rounded-lg text-black" id="search-btn">Search</button>
+      </div>
+    </div>
+
+    <div class="stats-container mt-10 flex gap-5 justify-evenly items-center flex-wrap flex-row">
+      <div>
+        <div class="easy-progress size-32 rounded-full  bg-conic-gradient border-4 border-green-700"
+          style="--progress-degree: 0%;"></div>
+        <div class="text-center" id="easy-label"></div>
+        <div class="text-center">Easy</div>
+      </div>
+      <div>
+        <div class="medium-progress size-32 rounded-full  bg-conic-gradient border-4 border-green-700"
+          style="--progress-degree: 0%;"></div>
+        <div class="text-center" id="medium-label"></div>
+        <div class="text-center">Medium</div>
+      </div>
+      <div>
+        <div class="hard-progress size-32 rounded-full  bg-conic-gradient border-4 border-green-700"
+          style="--progress-degree: 0%;"></div>
+        <div class="text-center" id="hard-label"></div>
+        <div class="text-center">Hard</div>
+      </div>
+
+    </div>
+
+    <div class="mt-5  flex justify-evenly flex-wrap gap-4 stats-cards ">
+      
+      
+    </div>
+
+  </div>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
